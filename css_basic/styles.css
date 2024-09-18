@@ -1,3 +1,4 @@
+/* positions, BackGrounds, Colors */
 body,
 main {
     display: flex;
@@ -5,11 +6,13 @@ main {
 
 body {
     flex-direction: column;
+    background-color: rgb(99, 92, 92);
 }
 
 main {
     flex-direction: row;
     flex: auto;
+    background-color: white;
 }
 
 article {
@@ -18,9 +21,130 @@ article {
 
 aside {
     flex: 1;
+    background-color: #fafafa;
 }
 
 article,
 aside {
     overflow-y: auto;
+}
+
+header,
+footer,
+aside p,
+article .button,
+.content-table thead tr {
+    background-color: #009879;
+}
+
+footer a,
+footer p,
+.logo,
+ul li a,
+aside p,
+.content-table thead tr,
+article .button {
+    color: #ffffff;
+}
+
+
+/* Header and logo style */
+header {
+    margin-bottom: 5px;
+}
+
+.logo {
+    font-size: 3em;
+    position: relative;
+    top: 11px;
+    left: 40px;
+}
+
+
+/* navigation links style */
+ul {
+    position: relative;
+    top: -10px;
+    left: 100px;
+}
+
+ul li a {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li a:hover {
+    font-size: 1em;
+}
+
+
+/* Footer Style */
+footer {
+    margin-top: 5px;
+}
+
+footer p {
+    text-align: center;
+    font-size: .9em;
+    margin: 8px auto;
+}
+
+
+/* more style */
+header,
+footer {
+    height: auto;
+}
+
+main,
+header,
+footer,
+aside {
+    border-radius: 6px;
+}
+
+
+/* Table style */
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 650px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+/* button style */
+article .button {
+    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-align: center;
 }
