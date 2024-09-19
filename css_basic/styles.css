@@ -1,4 +1,11 @@
-/* positions, BackGrounds, Colors */
+/* positions, BackGrounds, Colors, vars */
+:root {
+    --green: #009879;
+    --white: #ffffff;
+    --grey: #fafafa;
+    --black: rgb(99, 92, 92);
+}
+
 body,
 main {
     display: flex;
@@ -6,13 +13,13 @@ main {
 
 body {
     flex-direction: column;
-    background-color: rgb(99, 92, 92);
+    background-color: var(--black)
 }
 
 main {
     flex-direction: row;
     flex: auto;
-    background-color: white;
+    background-color: var(--white)
 }
 
 article {
@@ -21,7 +28,7 @@ article {
 
 aside {
     flex: 1;
-    background-color: #fafafa;
+    background-color: var(--grey)
 }
 
 article,
@@ -29,22 +36,14 @@ aside {
     overflow-y: auto;
 }
 
-header,
-footer,
-aside p,
-article .button,
-.content-table thead tr {
-    background-color: #009879;
+.my-class,
+.button {
+    background-color: var(--green);
+    color: var(--white)
 }
 
-footer a,
-footer p,
-.logo,
-ul li a,
-aside p,
-.content-table thead tr,
-article .button {
-    color: #ffffff;
+.my-class a {
+    color: inherit;
 }
 
 
@@ -87,10 +86,11 @@ footer p {
     text-align: center;
     font-size: .9em;
     margin: 8px auto;
+    color: inherit;
 }
 
 
-/* more style */
+/* height and border radius style */
 header,
 footer {
     height: auto;
@@ -134,12 +134,12 @@ aside {
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid var(--green);
 }
 
 
 /* button style */
-article .button {
+.button {
     text-decoration: none;
     font-size: 1.1em;
     position: relative;
