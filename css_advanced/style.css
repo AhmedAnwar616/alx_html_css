@@ -132,7 +132,6 @@ nav li a {
 
 /*layout seconde-section (testi)*/
 .cont-testi {
-    width: 943;
     margin: 104px auto;
 }
 
@@ -158,7 +157,7 @@ nav li a {
     margin: 104px auto;
 }
 
-#time-rate {
+p.move-color {
     position: relative;
     left: 200px;
     top: -40px;
