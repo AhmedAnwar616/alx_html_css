@@ -1,4 +1,33 @@
-/* positions, BackGrounds, Colors, vars */
+/* css reset rules */
+header,
+footer {
+    height: auto;
+}
+
+main,
+header,
+footer,
+aside {
+    border-radius: 6px;
+}
+
+article,
+aside {
+    overflow-y: auto;
+}
+
+header {
+    margin-bottom: 5px;
+}
+
+.logo {
+    font-size: 3em;
+    position: relative;
+    top: 11px;
+    left: 40px;
+}
+
+/* layout, BackGrounds, Colors */
 :root {
     --green: #009879;
     --white: #ffffff;
@@ -31,11 +60,6 @@ aside {
     background-color: var(--grey)
 }
 
-article,
-aside {
-    overflow-y: auto;
-}
-
 .my-class,
 .button {
     background-color: var(--green);
@@ -45,20 +69,6 @@ aside {
 .my-class a {
     color: inherit;
 }
-
-
-/* Header and logo style */
-header {
-    margin-bottom: 5px;
-}
-
-.logo {
-    font-size: 3em;
-    position: relative;
-    top: 11px;
-    left: 40px;
-}
-
 
 /* navigation links style */
 ul {
@@ -76,35 +86,7 @@ ul li a:hover {
     font-size: 1em;
 }
 
-
-/* Footer Style */
-footer {
-    margin-top: 5px;
-}
-
-footer p {
-    text-align: center;
-    font-size: .9em;
-    margin: 8px auto;
-    color: inherit;
-}
-
-
-/* height and border radius style */
-header,
-footer {
-    height: auto;
-}
-
-main,
-header,
-footer,
-aside {
-    border-radius: 6px;
-}
-
-
-/* Table style */
+/* Table */
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -137,8 +119,7 @@ aside {
     border-bottom: 2px solid var(--green);
 }
 
-
-/* button style */
+/* button */
 .button {
     text-decoration: none;
     font-size: 1.1em;
@@ -147,4 +128,16 @@ aside {
     border-radius: 5px;
     padding: 8px 15px;
     text-align: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 5px;
+}
+
+footer p {
+    text-align: center;
+    font-size: .9em;
+    margin: 8px auto;
+    color: inherit;
 }
