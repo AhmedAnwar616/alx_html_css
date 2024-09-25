@@ -53,11 +53,13 @@ main {
 
 article {
     flex: 2;
+    order: 1;
 }
 
 aside {
     flex: 1;
-    background-color: var(--grey)
+    order: 2;
+    background-color: var(--grey);
 }
 
 .my-class,
