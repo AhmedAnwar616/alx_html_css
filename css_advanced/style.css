@@ -1,6 +1,13 @@
+@font-face {
+    font-family: my font;
+    src: url(./source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+
 /* css reset rules */
 * {
     box-sizing: border-box;
+    font-family: my font;
 }
 
 body {
