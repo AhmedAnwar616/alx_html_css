@@ -40,7 +40,7 @@ nav a {
 
 .intro-section h1 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .intro-text {
@@ -95,6 +95,7 @@ main {
 .title {
     font-size: 32px;
     margin: 100px 0 40px;
+    font-weight: bold;
 }
 
 .description {
@@ -126,4 +127,48 @@ main {
 
 .our-results-icon {
     margin: 0 32px;
+}
+
+/* contact us section */
+.contact-us {
+    position: absolute;
+    top: 1400px;
+    height: 500px;
+    margin-left: 500px;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0 35px;
+}
+
+form {
+    width: 335px;
+}
+
+input {
+    border: none;
+    width: 87%;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 71%;
+    border: none;
+    height: 100px;
+}
+
+button {
+    color: white;
+    background-color: #FF6565;
+    border: 1px solid #FF6565;
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 12px;
+    margin: 35px 0 60px 103px;
 }
