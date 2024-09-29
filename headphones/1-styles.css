@@ -28,6 +28,11 @@ nav a {
     font-size: 14px;
 }
 
+nav a:hover,
+nav a:active {
+    color: #FF6565;
+}
+
 /* intro-section */
 .intro-section {
     width: 637px;

@@ -1,36 +1,60 @@
+/* vars */
+:root {
+    --white: #ffffff;
+    --red: #FF6565;
+    --blue: #071629;
+}
+
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /* header */
 header {
     height: 100vh;
-    background: url(./assets/images/headphones_hero_1.jpg) rgb(0, 0, 0, .5);
+    background: url(./assets/images/headphones_hero_1.jpg) no-repeat rgb(0, 0, 0, .5);
     background-blend-mode: overlay;
-    background-size: contain;
-    color: white;
+    color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 100%;
 }
-
 
 /* navigation links */
 nav {
-    width: 1000px;
+    width: 69.5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
     margin: 50px 15px;
     font-weight: bold;
     font-size: 14px;
 }
 
+nav a:hover,
+nav a:active {
+    color: var(--red);
+}
+
 /* intro-section */
 .intro-section {
-    width: 637px;
+    width: 44.2%;
     position: absolute;
     top: 50%;
     display: flex;
@@ -41,6 +65,8 @@ nav a {
 .intro-section h1 {
     font-size: 32px;
     font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
 }
 
 .intro-text {
@@ -50,12 +76,6 @@ nav a {
 }
 
 .intro-section a {
-    text-decoration: none;
-    color: inherit;
-    background-color: #FF6565;
-    border-radius: 22px;
-    padding: 10px 20px;
-    font-size: 12px;
     margin-top: 25px;
 }
 
@@ -88,7 +108,7 @@ main {
     background-blend-mode: overlay;
     background-size: cover;
     top: 700px;
-    color: white;
+    color: var(--white);
     width: 100%;
 }
 
@@ -164,18 +184,14 @@ textarea {
 }
 
 button {
-    color: white;
-    background-color: #FF6565;
-    border: 1px solid #FF6565;
-    border-radius: 22px;
-    padding: 10px 20px;
-    font-size: 12px;
+    color: var(--white);
+    border: 1px solid var(--red);
     margin: 35px 0 60px 103px;
 }
 
 /* footer */
 footer {
-    background-color: #071629;
+    background-color: var(--blue);
     height: 249px;
     position: absolute;
     top: 2600px;
@@ -188,20 +204,165 @@ footer {
     left: 100px;
 }
 
-.links {
+.foot-links {
     position: absolute;
     top: 105px;
     left: 1100px;
 }
 
-.text {
+.foot-text {
     position: absolute;
     top: 210px;
     left: 625px;
-    color: white;
+    color: var(--white);
     font-size: 12px;
 }
 
-.link {
+.foot-link {
     margin: 7px;
+}
+
+/* buttons */
+.button {
+    background-color: var(--red);
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.button:hover,
+.button:active {
+    opacity: 0.9
+}
+
+/* mobile version */
+@media (min-width: 350px)and (max-width: 480px) {
+
+    /* header */
+    header {
+        background-position: center;
+        background-size: cover;
+        height: 120vh;
+
+    }
+
+    /* navigation links */
+    nav div {
+        visibility: hidden;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+
+    /* intro section */
+    .intro-section {
+        width: 80%;
+        top: 35%;
+    }
+
+    .intro-section h1 {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        line-height: 20px;
+    }
+
+    .button {
+        padding: 15px 35px;
+    }
+
+    .intro-section a {
+        margin-top: 30px;
+    }
+
+    .intro-description {
+        margin-top: 60px;
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    /* what we do and our results sections */
+    .what-we-do,
+    .our-results {
+        width: auto;
+        padding: 10px;
+    }
+
+    .what-we-do {
+        left: 0%;
+    }
+
+    .our-results {
+        top: 1500px;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .icon-card,
+    .title-card {
+        margin-bottom: 20px;
+    }
+
+    .text-card {
+        margin-bottom: 80px;
+    }
+
+    .our-results-icon {
+        margin-bottom: 30px;
+        width: 40%;
+        height: 40%;
+    }
+
+    /* contact us section */
+    .contact-us {
+        top: 2850px;
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    form div {
+        padding: 30px;
+        width: 100%;
+    }
+
+    hr {
+        margin-bottom: 0;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    /* footer */
+    .logo,
+    .foot-links,
+    .foot-text {
+        position: static;
+    }
+
+    footer {
+        top: 4300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
