@@ -1,0 +1,368 @@
+/* vars */
+:root {
+    --white: #ffffff;
+    --red: #FF6565;
+    --blue: #071629;
+}
+
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* header */
+header {
+    height: 100vh;
+    background: url(./assets/images/headphones_hero_1.jpg) no-repeat rgb(0, 0, 0, .5);
+    background-blend-mode: overlay;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/* navigation links */
+nav {
+    width: 69.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    margin: 50px 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a:active {
+    color: var(--red);
+}
+
+/* intro-section */
+.intro-section {
+    width: 44.2%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-section h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+}
+
+.intro-text {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.intro-section a {
+    margin-top: 25px;
+}
+
+.intro-description {
+    margin-top: 50px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* what we do and our results sections */
+main {
+    position: relative;
+}
+
+.what-we-do,
+.our-results {
+    height: 650px;
+    text-align: center;
+    position: absolute;
+}
+
+.what-we-do {
+    width: 1000px;
+    left: 13.5%;
+}
+
+.our-results {
+    background: url(./assets/images/headphones_hero_2.jpg) rgb(0, 0, 0, .3);
+    background-blend-mode: overlay;
+    background-size: cover;
+    top: 700px;
+    color: var(--white);
+    width: 100%;
+}
+
+.title {
+    font-size: 32px;
+    margin: 100px 0 40px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: flex;
+    align-items: baseline;
+}
+
+.icon-card {
+    margin-bottom: 30px;
+}
+
+.title-card {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-card {
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.our-results-icon {
+    margin: 0 32px;
+}
+
+/* contact us section */
+.contact-us {
+    position: absolute;
+    top: 1400px;
+    height: 500px;
+    margin-left: 500px;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0 35px;
+}
+
+form {
+    width: 335px;
+}
+
+input {
+    border: none;
+    width: 87%;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 71%;
+    border: none;
+    height: 100px;
+}
+
+button {
+    color: var(--white);
+    border: 1px solid var(--red);
+    margin: 35px 0 60px 103px;
+}
+
+/* footer */
+footer {
+    background-color: var(--blue);
+    height: 249px;
+    position: absolute;
+    top: 2600px;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+
+.foot-links {
+    position: absolute;
+    top: 105px;
+    left: 1100px;
+}
+
+.foot-text {
+    position: absolute;
+    top: 210px;
+    left: 625px;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.foot-link {
+    margin: 7px;
+}
+
+/* buttons */
+.button {
+    background-color: var(--red);
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.button:hover,
+.button:active {
+    opacity: 0.9
+}
+
+/* mobile version */
+@media (min-width: 350px)and (max-width: 480px) {
+
+    /* header */
+    header {
+        background-position: center;
+        background-size: cover;
+        height: 120vh;
+
+    }
+
+    /* navigation links */
+    nav div {
+        visibility: hidden;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+
+    /* intro section */
+    .intro-section {
+        width: 80%;
+        top: 35%;
+    }
+
+    .intro-section h1 {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        line-height: 20px;
+    }
+
+    .button {
+        padding: 15px 35px;
+    }
+
+    .intro-section a {
+        margin-top: 30px;
+    }
+
+    .intro-description {
+        margin-top: 60px;
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    /* what we do and our results sections */
+    .what-we-do,
+    .our-results {
+        width: auto;
+        padding: 10px;
+    }
+
+    .what-we-do {
+        left: 0%;
+    }
+
+    .our-results {
+        top: 1500px;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .icon-card,
+    .title-card {
+        margin-bottom: 20px;
+    }
+
+    .text-card {
+        margin-bottom: 80px;
+    }
+
+    .our-results-icon {
+        margin-bottom: 30px;
+        width: 40%;
+        height: 40%;
+    }
+
+    /* contact us section */
+    .contact-us {
+        top: 2850px;
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    form div {
+        padding: 30px;
+        width: 100%;
+    }
+
+    hr {
+        margin-bottom: 0;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    /* footer */
+    .logo,
+    .foot-links,
+    .foot-text {
+        position: static;
+    }
+
+    footer {
+        top: 4300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
