@@ -177,3 +177,120 @@ button {
     font-size: 12px;
     margin: 35px 0 60px 103px;
 }
+
+/* mobile version */
+@media (min-width: 350px)and (max-width: 480px) {
+
+    /* header */
+    header {
+        background-position: center;
+        background-size: cover;
+        height: 120vh;
+
+    }
+
+    /* navigation links */
+    nav div {
+        visibility: hidden;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+
+    /* intro section */
+    .intro-section {
+        width: 80%;
+        top: 35%;
+    }
+
+    .intro-section h1 {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        line-height: 20px;
+    }
+
+    .button {
+        padding: 15px 35px;
+    }
+
+    .intro-section a {
+        margin-top: 30px;
+    }
+
+    .intro-description {
+        margin-top: 60px;
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    /* what we do and our results sections */
+    .what-we-do,
+    .our-results {
+        width: auto;
+        padding: 10px;
+    }
+
+    .what-we-do {
+        left: 0%;
+    }
+
+    .our-results {
+        top: 1500px;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .icon-card,
+    .title-card {
+        margin-bottom: 20px;
+    }
+
+    .text-card {
+        margin-bottom: 80px;
+    }
+
+    .our-results-icon {
+        margin-bottom: 30px;
+        width: 40%;
+        height: 40%;
+    }
+
+    /* contact us section */
+    .contact-us {
+        top: 2850px;
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    form div {
+        padding: 30px;
+        width: 100%;
+    }
+
+    hr {
+        margin-bottom: 0;
+    }
+
+    button {
+        margin-left: 0;
+    }
+}
